@@ -33,19 +33,23 @@ function logIn() {
 	console.log(usernameField);
 	console.log(passwordField);
 
-    const username = usernameField ? usernameField.value : '';
-    const password = passwordField ? passwordField.value : '';
+    const username = usernameField ? usernameField : '';
+    const password = passwordField ? passwordField : '';
+    const sample = 'chike';
+    const adminSample = 'admin';
+    console.log(sample)
     console.log('> attempting redirect');
-    if (username !== '' && password !== '') {
+    console.log(username === sample)
+    if (String(username) === sample) {
         console.log('> Storing');
         localStorage.setItem('username', username);
         window.location.assign("template/index.html");
         console.log('> success');
     }
-    else {
-        console.log('> Nope!');
+    else if (String(username) === adminSample) {
+        console.log('> Storing');
         localStorage.setItem('username', username);
-        window.location.href = "template/index.html";
+        window.location.href = "enterprise/template/index.html";
         console.log('> success');
     }
 }
