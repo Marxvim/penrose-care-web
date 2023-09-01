@@ -54,5 +54,5 @@ function logIn() {
     }
 }
 function signUp() {
-    window.location.assign("enterprise/template/auth-signup.html");
+    window.location.assign("template/pages/samples/register.html");
 }
