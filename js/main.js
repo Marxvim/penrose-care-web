@@ -53,3 +53,6 @@ function logIn() {
         console.log('> success');
     }
 }
+function signUp() {
+    window.location.assign("enterprise/template/auth-signup.html");
+}
