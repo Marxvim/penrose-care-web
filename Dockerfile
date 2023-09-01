@@ -11,7 +11,8 @@ RUN cp /root/.nvm/versions/node/v${NODE_VERSION}/bin/node /usr/bin/
 RUN cp /root/.nvm/versions/node/v${NODE_VERSION}/bin/npm /usr/bin/
 RUN /root/.nvm/versions/node/v${NODE_VERSION}/bin/npm install  leasot@latest -g
 #WORKDIR "template"
-#CMD ["penrose-care-web/index.html"]
+
 
 FROM httpd:2.4
 COPY . /usr/local/apache2/htdocs
+CMD ["index.html"]
