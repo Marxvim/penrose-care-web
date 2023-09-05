@@ -54,5 +54,5 @@ function logIn() {
     }
 }
 function signUp() {
-    window.location.assign("template/pages/samples/register.html");
+    window.location.assign("https://login-portal-489teg4wq-see-k.vercel.app/sign-up");
 }
