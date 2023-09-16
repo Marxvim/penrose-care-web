@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penrose Care - Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/accessAgreement.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .agreement-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .company-name {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Added more spacing here */
+        }
+
+        .continue-button {
+            background: linear-gradient(90deg, black, #0056b3);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px; /* More rounded corners */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow */
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s; /* Smooth transition effect */
+        }
+
+        .continue-button:hover {
+            background: linear-gradient(90deg, #0056b3, #007BFF);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transform: translateY(-2px); /* Slight upward motion on hover */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="agreement-box">
+        <div class="company-name">Penrose Care Beta</div>
+        <p>
+            Penrose Care makes no representations or warranties of any kind, express or implied, as to the operation of the Service, the accuracy or completeness of its contents, or the data sources utilized. You acknowledge that using the Service, especially its AI-based features, may produce results that are unpredictable or unintended, and you assume all associated risks. Any reliance on such information is at your own risk. Penrose Care reserves the right to modify, suspend, or discontinue the Service, or any part thereof, at any time, without notice. This Agreement is governed by and construed in accordance with the laws of the State of Minnesota, without regard to its conflict of laws principles. Any disputes arising out of or related to this Agreement or the Service shall be resolved exclusively in the state or federal courts located in Minneapolis, Minnesota.
+        </p>
+        <div class="checkbox-container">
+            <input type="checkbox" id="agreement" name="agreement">
+            <label for="agreement">I understand and agree to the terms.</label>
+        </div>
+        <a href="https://login-portal-app.vercel.app/dashboard" class="continue-button">Continue</a>
+    </div>
+</div>
+</body>
+</html>
