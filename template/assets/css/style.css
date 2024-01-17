@@ -16982,7 +16982,7 @@ code {
       right: 0;
       height: 100%; }
   .card.corona-gradient-card {
-    background-image: linear-gradient(to left, #d41459, #911a6c);
+    background-image: linear-gradient(to left, #272626, #000000);
     border-radius: 6px; }
     .card.corona-gradient-card .gradient-corona-img {
       height: 85px; }
