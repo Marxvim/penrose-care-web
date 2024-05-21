@@ -15,7 +15,7 @@ RUN /root/.nvm/versions/node/v${NODE_VERSION}/bin/npm install  leasot@latest -g
 
 FROM httpd:2.4
 COPY . /usr/local/apache2/htdocs
-#CMD ["index.html"]
+#CMD ["dashboard.html"]
 
 # Use the official Nginx image based on Alpine Linux
 FROM nginx:alpine

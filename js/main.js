@@ -49,7 +49,7 @@ function logIn() {
     else if (String(username) === adminSample) {
         console.log('> Storing');
         localStorage.setItem('username', username);
-        window.location.href = "enterprise/template/index.html";
+        window.location.href = "enterprise/template/dashboard.html";
         console.log('> success');
     }
 }
